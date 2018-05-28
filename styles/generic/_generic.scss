@@ -1,0 +1,8 @@
+/* resetendo el box sizing de todo
+*/
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}

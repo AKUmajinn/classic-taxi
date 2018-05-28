@@ -1,0 +1,32 @@
+body {
+	margin: 0;
+	font-size: 16px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	color: $text-color;
+	background-color: $body-color;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h1 small, 
+h2 small, 
+h3 small {
+	display: block;
+	font-size: 0.7em;
+}
+
+a {
+	color: $link-color;
+	text-decoration: none;
+}
+
+img {
+  max-width: 100%
+}
+
+ul {
+	list-style: none;
+}

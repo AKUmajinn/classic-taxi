@@ -1,0 +1,83 @@
+/* resetendo el box sizing de todo
+*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  color: #333333;
+  background-color: #FAFDFF; }
+
+h1 {
+  font-size: 2em; }
+
+h1 small,
+h2 small,
+h3 small {
+  display: block;
+  font-size: 0.7em; }
+
+a {
+  color: #2c9aff;
+  text-decoration: none; }
+
+img {
+  max-width: 100%; }
+
+ul {
+  list-style: none; }
+
+.u-container {
+  max-width: 1244px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: flex; }
+
+.u-m-50 {
+  width: 50%; }
+
+.c-header {
+  position: absolute;
+  width: 100%; }
+  .c-header .c-header__nav-bar ul {
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center; }
+    .c-header .c-header__nav-bar ul :first-child {
+      margin-right: auto; }
+    .c-header .c-header__nav-bar ul a {
+      padding: 0 2em;
+      color: #fdfdfd;
+      font-weight: bold; }
+
+.c-banner {
+  padding: 13em 0 0;
+  background-image: url(images/back.png);
+  background-position: bottom;
+  background-size: cover; }
+  .c-banner h1 {
+    color: #fdfdfd; }
+  .c-banner .c-banner__car {
+    transition: all ease;
+    animation-name: motor-car;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; }
+
+@keyframes motor-car {
+  from {
+    transform: translateY(0); }
+  to {
+    transform: translateY(1px); } }
+
+/*# sourceMappingURL=styles.css.map */
