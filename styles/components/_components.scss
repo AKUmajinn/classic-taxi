@@ -74,6 +74,11 @@
 	width: 25%;
 }
 
+.u-obj-center {
+	align-items: center;
+	justify-content: center;
+}
+
 .c-header {
 	position: absolute;
 	width: 100%;
@@ -119,7 +124,7 @@
 }
 
 .c-reasons {
-	padding: 2em 0;
+	padding: 2em 0 4em 0;
 	background: $body-color--alt;
 
 	.c-reasons__car-animation {
@@ -135,13 +140,35 @@
 		animation: driving-car 3s linear infinite;
 	}
 
+	.c-reasons__list {
+		display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+	}
+
 	p {
-		text-align: center;
-		font-size: 1.2em;
-		i::before {
-			display: block;
-			font-size: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+
+		i {
+			&:before {
+				height: 1.5em;
+				width: 1.5em;
+		    margin-bottom: 0.2em;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 3em;
+				background-color: $primary;
+				border-radius: 100%;
+			}
 		}
+			
 	}
 }
 

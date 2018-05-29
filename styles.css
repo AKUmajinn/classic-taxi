@@ -8,23 +8,30 @@
 body {
   margin: 0;
   font-size: 16px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   color: #333333;
   background-color: #FAFDFF; }
 
 h1 {
-  font-size: 2.4em; }
+  font-size: 2.4em;
+  font-family: "Slabo 27px", serif; }
 
 h2,
 h3 {
-  text-align: center; }
+  text-align: center;
+  font-family: "Slabo 27px", serif; }
+
+h2 {
+  font-size: 1.6em; }
 
 h1 small,
 h2 small,
 h3 small {
   display: block;
-  font-size: 0.7em; }
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.7em;
+  font-weight: normal; }
 
 a {
   color: #2c9aff;
@@ -95,6 +102,10 @@ ul {
 .u-m-25 {
   width: 25%; }
 
+.u-obj-center {
+  align-items: center;
+  justify-content: center; }
+
 .c-header {
   position: absolute;
   width: 100%; }
@@ -131,7 +142,7 @@ ul {
     animation-direction: alternate; }
 
 .c-reasons {
-  padding: 2em 0;
+  padding: 2em 0 4em 0;
   background: #f1f0e6; }
   .c-reasons .c-reasons__car-animation {
     display: flex;
@@ -144,12 +155,28 @@ ul {
     background-position: 0 0;
     animation-name: driving-car;
     animation: driving-car 3s linear infinite; }
+  .c-reasons .c-reasons__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; }
   .c-reasons p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    font-size: 1.2em; }
-    .c-reasons p i::before {
-      display: block;
-      font-size: 3em; }
+    font-size: 1.2em;
+    font-weight: bold; }
+    .c-reasons p i:before {
+      height: 1.5em;
+      width: 1.5em;
+      margin-bottom: 0.2em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3em;
+      background-color: #FFF83A;
+      border-radius: 100%; }
 
 @keyframes motor-car {
   from {
