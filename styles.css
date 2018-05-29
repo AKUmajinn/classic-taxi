@@ -14,7 +14,11 @@ body {
   background-color: #FAFDFF; }
 
 h1 {
-  font-size: 2em; }
+  font-size: 2.4em; }
+
+h2,
+h3 {
+  text-align: center; }
 
 h1 small,
 h2 small,
@@ -32,15 +36,64 @@ img {
 ul {
   list-style: none; }
 
+@font-face {
+  font-family: "untitled-font-1";
+  src: url("fonts/untitled-font-1.eot");
+  src: url("fonts/untitled-font-1.eot?#iefix") format("embedded-opentype"), url("fonts/untitled-font-1.woff") format("woff"), url("fonts/untitled-font-1.ttf") format("truetype"), url("fonts/untitled-font-1.svg#untitled-font-1") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[data-icon]:before {
+  font-family: "untitled-font-1" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "untitled-font-1" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-clock-o:before {
+  content: "\61"; }
+
+.icon-taxi-side:before {
+  content: "\63"; }
+
+.icon-users:before {
+  content: "\64"; }
+
+.icon-hand-hold:before {
+  content: "\62"; }
+
 .u-container {
   max-width: 1244px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  display: flex; }
+  display: flex;
+  justify-content: center; }
 
 .u-m-50 {
   width: 50%; }
+
+.u-m-30 {
+  width: 30%; }
+
+.u-m-25 {
+  width: 25%; }
 
 .c-header {
   position: absolute;
@@ -62,22 +115,51 @@ ul {
 
 .c-banner {
   padding: 13em 0 0;
-  background-image: url(images/back.png);
   background-position: bottom;
-  background-size: cover; }
+  background-size: cover;
+  background-image: url(images/back.png); }
   .c-banner h1 {
-    color: #fdfdfd; }
+    color: #fdfdfd;
+    width: 85%;
+    background: rgba(0, 0, 0, 0.2509803922); }
   .c-banner .c-banner__car {
+    margin-top: 1em;
     transition: all ease;
     animation-name: motor-car;
     animation-duration: 0.2s;
     animation-iteration-count: infinite;
     animation-direction: alternate; }
 
+.c-reasons {
+  padding: 2em 0;
+  background: #f1f0e6; }
+  .c-reasons .c-reasons__car-animation {
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+    padding: 85px 0;
+    background-image: url("images/back-2.png");
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    animation-name: driving-car;
+    animation: driving-car 3s linear infinite; }
+  .c-reasons p {
+    text-align: center;
+    font-size: 1.2em; }
+    .c-reasons p i::before {
+      display: block;
+      font-size: 3em; }
+
 @keyframes motor-car {
   from {
     transform: translateY(0); }
   to {
     transform: translateY(1px); } }
+@keyframes driving-car {
+  from {
+    background-position: 0 100%; }
+  to {
+    background-position: 0 0; } }
 
 /*# sourceMappingURL=styles.css.map */
