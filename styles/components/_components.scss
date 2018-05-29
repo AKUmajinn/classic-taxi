@@ -59,7 +59,7 @@
 	margin-right: auto;
 	width: 100%;
 	display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .u-m-50 {
@@ -74,10 +74,17 @@
 	width: 25%;
 }
 
-.u-obj-center {
-	align-items: center;
-	justify-content: center;
+.u-colum-center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
+
+.u-txt-center {
+	text-align: center;
+}
+
 
 .c-header {
 	position: absolute;
@@ -128,10 +135,10 @@
 	background: $body-color--alt;
 
 	.c-reasons__car-animation {
+		padding: 85px 0;
 		display: flex;
     justify-content: center;
 		border-radius: 100%;
-		padding: 85px 0;
 		background-image: url('images/back-2.png');
     background-size: cover;
     background-repeat: repeat-x;
@@ -172,6 +179,44 @@
 	}
 }
 
+.c-staff {
+	padding: 2em 0;
+
+	.c-staff__carrusel {
+		padding-bottom: 33.3%;
+		overflow: hidden;
+		position: relative;
+		.c-staff__partner {
+			width: 100%;
+			position: absolute;
+			&:nth-child(1) {
+				animation: staff-carrusel1 15s infinite;
+				animation-direction: alternate;
+			}
+			&:nth-child(2) {
+				animation: staff-carrusel2 15s infinite;
+				animation-direction: alternate;
+			}
+			&:nth-child(3) {
+				animation: staff-carrusel3 15s infinite;
+				animation-direction: alternate;
+			}
+			img {
+				margin-bottom: 1em;
+			}
+			.c-staff__driver {
+				img {
+					border-radius: 100%;
+				}
+			}
+		}
+	}
+
+   
+	
+}
+
+
 @keyframes motor-car {
 	from {
 		transform: translateY(0);
@@ -191,6 +236,70 @@
 	to {
 		background-position: 0 0;
 	}
+}
+
+
+@keyframes staff-carrusel1 {
+		0% {
+			bottom: 0%;
+		}
+		20% {
+			bottom: 0%;
+		}
+		40% {
+			bottom: 100%;
+		}
+		60% {
+			bottom: 100%;
+		}
+		80% {
+			bottom: 100%;
+		}
+		100% {
+			bottom: 200%;
+		}
+}
+@keyframes staff-carrusel2 {
+		0% {
+			bottom: -100%;
+		}
+		20% {
+			bottom: -100%;
+		}
+		40% {
+			bottom: 0%;
+		}
+		60% {
+			bottom: 0%;
+		}
+		80% {
+			bottom: 100%;
+		}
+		100% {
+			bottom: 100%;
+		}
+
+}
+
+@keyframes staff-carrusel3 {
+		0% {
+			bottom: -200%;
+		}
+		20% {
+			bottom: -200%;
+		}
+		40% {
+			bottom: -100%;
+		}
+		60% {
+			bottom: -100%;
+		}
+		80% {
+			bottom: 0%;
+		}
+		100% {
+			bottom: 0%;
+		}
 }
 
 
