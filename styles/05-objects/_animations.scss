@@ -1,0 +1,85 @@
+
+@keyframes motor-car {
+	from {
+		transform: translateY(0);
+	}
+
+	to {
+		transform: translateY(1px);
+	}
+}
+
+
+@keyframes driving-car {
+	from {
+    background-position: 0 100%;
+	}
+
+	to {
+		background-position: 0 0;
+	}
+}
+
+
+@keyframes staff-carrusel1 {
+		0% {
+			bottom: 0%;
+		}
+		20% {
+			bottom: 0%;
+		}
+		40% {
+			bottom: 100%;
+		}
+		60% {
+			bottom: 100%;
+		}
+		80% {
+			bottom: 100%;
+		}
+		100% {
+			bottom: 200%;
+		}
+}
+@keyframes staff-carrusel2 {
+		0% {
+			bottom: -100%;
+		}
+		20% {
+			bottom: -100%;
+		}
+		40% {
+			bottom: 0%;
+		}
+		60% {
+			bottom: 0%;
+		}
+		80% {
+			bottom: 100%;
+		}
+		100% {
+			bottom: 100%;
+		}
+
+}
+
+@keyframes staff-carrusel3 {
+		0% {
+			bottom: -200%;
+		}
+		20% {
+			bottom: -200%;
+		}
+		40% {
+			bottom: -100%;
+		}
+		60% {
+			bottom: -100%;
+		}
+		80% {
+			bottom: 0%;
+		}
+		100% {
+			bottom: 0%;
+		}
+}

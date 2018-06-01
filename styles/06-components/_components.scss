@@ -1,0 +1,130 @@
+.c-header {
+	position: absolute;
+	width: 100%;
+	.c-header__nav-bar {
+		ul {
+			width: 100%;
+			margin: 0;
+			padding-left: 0;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-end;
+	    align-items: center;
+			:first-child {
+				margin-right: auto;
+			}
+			a {
+	    	padding: 0 2em;
+	    	color: $text-color--alt;
+	    	font-weight: bold;
+			}
+		}
+	}
+}
+
+.c-banner {
+  padding: 13em 0 0;
+  background-position: bottom;
+  background-size: cover;
+  background-image: url(images/back.png);
+  h1 {
+  	color: $text-color--alt;
+		width: 85%;
+		background: rgba(0, 0, 0, 0.25098039215686274);
+  }
+	.c-banner__car {
+    margin-top: 1em;
+		transition: all ease;
+		animation-name: motor-car;
+		animation-duration: 0.2s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	}
+}
+
+.c-reasons {
+	padding: 2em 0 4em 0;
+	background: $body-color--alt;
+
+	.c-reasons__car-animation {
+		padding: 85px 0;
+		display: flex;
+    justify-content: center;
+		border-radius: 100%;
+		background-image: url('images/back-2.png');
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: 0 0;
+		animation-name: driving-car;
+		animation: driving-car 3s linear infinite;
+	}
+
+	.c-reasons__list {
+		display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+	}
+
+	p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+
+		i {
+			&:before {
+				height: 1.5em;
+				width: 1.5em;
+		    margin-bottom: 0.2em;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 3em;
+				background-color: $primary;
+				border-radius: 100%;
+			}
+		}
+			
+	}
+}
+
+.c-staff {
+	padding: 2em 0;
+
+	.c-staff__carrusel {
+		padding-bottom: 33.3%;
+		overflow: hidden;
+		position: relative;
+		.c-staff__partner {
+			width: 100%;
+			position: absolute;
+			&:nth-child(1) {
+				animation: staff-carrusel1 15s infinite;
+				animation-direction: alternate;
+			}
+			&:nth-child(2) {
+				animation: staff-carrusel2 15s infinite;
+				animation-direction: alternate;
+			}
+			&:nth-child(3) {
+				animation: staff-carrusel3 15s infinite;
+				animation-direction: alternate;
+			}
+			img {
+				margin-bottom: 1em;
+			}
+			.c-staff__driver {
+				img {
+					border-radius: 100%;
+				}
+			}
+		}
+	}
+
+   
+	
+}
+

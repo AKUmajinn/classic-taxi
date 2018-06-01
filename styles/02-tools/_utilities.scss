@@ -1,0 +1,32 @@
+
+.u-container {
+	max-width: 1244px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	display: flex;
+  justify-content: space-around;
+}
+
+.u-m-50 {
+	width: 50%;
+}
+
+.u-m-30 {
+	width: 30%;
+}
+
+.u-m-25 {
+	width: 25%;
+}
+
+.u-colum-center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.u-txt-center {
+	text-align: center;
+}
