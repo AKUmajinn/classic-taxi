@@ -30,3 +30,27 @@
 .u-txt-center {
 	text-align: center;
 }
+
+.u-btn-icon--circle {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: bold;
+	span {
+		&:before {
+			height: 1.5em;
+			width: 1.5em;
+			margin-bottom: 0.2em;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 3em;
+			background-color: #FFF83A;
+			border-radius: 100%;
+		}
+	}
+
+}
+
